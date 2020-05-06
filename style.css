@@ -1,0 +1,41 @@
+        body { 
+            background: #FCF6B1;
+        }
+        section {
+            background:#FCF6B1;
+        }
+        h1{
+            color: #F72C25;
+        }
+        p{
+            color: rgb(131, 17, 112);
+        }
+        h2{
+            color: #1460aa;
+        }
+        h3{
+            color: #F7B32B;
+        }
+
+.green-header{
+    color:green;
+}
+
+a {
+    color: hotpink;
+}
+nav a {
+    color: rgb(75, 180, 5);
+}
+.red-header {
+    color: red;
+}
+.blue-header {
+    color:blue;
+}
+.pink-header {
+    color: pink
+}
+.purple-header {
+    color:purple;
+}
