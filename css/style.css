@@ -109,8 +109,7 @@ color: rgb(131, 17, 112);
 }
 .main__heading--html {
     color: cyan;
-    
 }
 .page {
-    background-image: url(../homepage/img/html.jpg);
+    background-image: url(../img/html.jpg);
 }

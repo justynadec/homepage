@@ -5,44 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="nauka-html.html">Nauka html</a>
-            <a href="skroty.html">Skróty klawiszowe</a>
-            <a href="index.html">Strona główna</a>
+    <header class="header">
+        <nav class="navigation">
+            <a class= "navigation__link navigation__link--homepage" href="nauka-html.html">Nauka html</a>
+            <a class= "navigation__link" href="skroty.html">Skróty klawiszowe</a>
+            <a class= "navigation__link" href="index.html">Strona główna</a>
         </nav>
     </header>
-    <main>
-        <header id="top">
-            <h1 class="red-header">Justyna Dec – strona główna</h1>
+    <main class="main">
+        <header class="main__header" id="top">
+            <h1 class="main__heading main__heading--js id="name>Justyna Dec – strona główna</h1>
         </header>
-        <section>
-            <h2 class="green-header"> Kim jestem i co tu robię?</h2>
-            <img src="farm.jpg" width="148" height="188" alt="farmaceuta"/>
-            <p> Farmaceutką, która zapragnęła <strong>zostać programistką.</strong> <br /> Jako, że tematy informatyczne
+        <section class="about">
+            <h2 class="about__heading"> Kim jestem i co tu robię?</h2>
+            <img class="about__picture" src="farm.jpg" width="148" height="188" alt="farmaceuta"/>
+            <p class="about__description"> Farmaceutką, która zapragnęła <strong>zostać programistką.</strong> <br /> Jako, że tematy informatyczne
                 jakoś do tej pory nie były
-                mi bliskie, domyślam się, że przede mną mnóstwo pracy. <a href="#notatki">Przejdź do notatek</a> Jednak wydaje
+                mi bliskie, domyślam się, że przede mną mnóstwo pracy. <a class="about__link" href="#notatki">Przejdź do notatek</a> Jednak wydaje
                 mi się, że będzie to fajna odskocznia
                 od obecnej sytuacji. Zmotywował mnie kolega, pracujący jako programista i bywający na Maćkowych
-                konferencjach. Więcej informacji o szkoleniu, które przerabiam, znajdziesz na stronie <a
+                konferencjach. Więcej informacji o szkoleniu, które przerabiam, znajdziesz na stronie <a class="about__link"
                     href="https://cotenfrontend.pl/">WTF.</a> </p>
         </section>
-        <section id="ncotatki">
-            <h2 class="blue-header"> Notatki z WTF – co ten fronted </h2>
+        <section class="notes" id="ncotatki">
+            <h2 class="notes__heading"> Notatki z WTF – co ten fronted </h2>
             <p> Niespecjalnie wiem jak tworzyć e-notatki, ale spróbuję.
                 Być może takie podwójne przepisanie pomoże mi <em>uporządkować wiedzę.</em> </p>
             <article>
-                <h3> Tydzień I </h3>
-                <p>Dowiedziałam się czym właściwie jest ten fronted. Ściągnęłam odpowiednie programy i aplikacje.</p>
-
+                <h3 class="week-summary"> Tydzień I </h3>
+                <p class="week-summary__description">Dowiedziałam się czym właściwie jest ten fronted. Ściągnęłam odpowiednie programy i aplikacje.</p>
+                <p class="week-summary__description week-summary__description--js"></p>
             </article>
             <article>
-                <h3> Tydzień II </h3>
-                <p> Warstwa 0: treść </br>
+                <h3 class="week-summary"> Tydzień II </h3>
+                <p class="week-summary__description"> Warstwa 0: treść </br>
                     Warstwa 1: HTML – nadaje tekstowi „sens” - nagłówki, znaczniki itp. </br>
                     Warstwa 2: CSS: nadaje wygląd wcześniejszym warstwom – wartswa prezentacji (kolory, style itp.) </br\
                     Jeśli coś możemy zrobić za pomocą HTML, to nie mieszajmy w to JavaScriptu
@@ -54,25 +55,36 @@
                     <br /> -rozszerza możliwości zwykłych stron </p>
             </article>
             <article>
-                <h3> Tydzień III </h3>
-                <p>1. Kaban - planowanie pracy (spis widoczny). Strona trello umożliwia śledzenie postępu wykonywania
+                <h3 class="week-summary"> Tydzień III </h3>
+                <p class="week-summary__description">
+                    <ol> <li>Kaban - planowanie pracy (spis widoczny). Strona trello umożliwia śledzenie postępu wykonywania
                     konkretnych zadań. Przydane urządzenie także, gdy wymagana jest praca zespołowa i podział
-                    obowiązków.
-                    <br /> 2. HTML
-                    <br /> -znacznik &lt;br> służy do tworzenia tekstu w nowej linii, jest znacznikiem pojedynczym
-                        <br />-znaczniki &lt;b> i &lt;strong> <b>pogrubiają</b> tekst
-                                <br />-znaczniki &lt;i> oraz &lt;em> <i>pochylają</i> tekst
+                    obowiązków.</li>
+                   <li> HTML </li>
+                 </ol>
+                 <ul>
+                    <il>znacznik &lt;br> służy do tworzenia tekstu w nowej linii, jest znacznikiem pojedynczym </il>
+                      <il>znaczniki &lt;b> i &lt;strong> <b>pogrubiają</b> tekst</il>
+                        <il>znaczniki &lt;i> oraz &lt;em> <i>pochylają</i> tekst</il>> </ul>
             </article>
 
         </section>
-
+        <section>
+            <h4 class="list"> Lista fajnych znaczników</h4>
+            <ul>
+                <li class="list__item">  UL </li>
+                <li class="list__item">  OL </li>
+                <li class="list__item">  section </li>
+            </ul>
+           
+        </section>
 
         
     </main>
-    <footer>
+    <footer class="footer"> 
 
         Strona Justyny Dec. 
-     <a href="#top">idź na górę strony</a>
+     <a class="footer__link" href="#top">idź na górę strony</a>
     </footer>
     <script src="main.js">
     </script>
