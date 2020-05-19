@@ -43,7 +43,7 @@ nav a {
     max-width: 1000px;
     margin: 0 auto;
 }
-}
+
 .navigation
 {
     background: green;
@@ -75,18 +75,14 @@ margin: auto;
 max-width: 800px;
 color: rgb(131, 17, 112);
 }
-.about {
 
-}
 .about__heading {
     color: green;
 }
 .about__link {
     color: yellowgreen;
 }
-.notes {
 
-}
 .notes__heading {
 
     color: green;
@@ -107,10 +103,18 @@ color: rgb(131, 17, 112);
     list-style: square;
     
 }
-.main__heading--html {
+.content__heading--html {
     color: cyan;
-    
 }
 .page {
-    background-image: url(../homepage/img/html.jpg);
+    
+    min-height: 100vh;
+    background-position: center center; 
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+.content {
+    background-image: url(/html.jpg);
+  
 }
