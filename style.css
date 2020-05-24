@@ -5,10 +5,12 @@
             box-sizing: inherit;
         }            
             body { 
-            background: #FCF6B1;
+                background: background-color: #FAACA8;
+                background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+                background-size: cover;
         }
         section {
-            background:#FCF6B1;
+            background: #f6ecf7;
 
         }
         h1{
@@ -25,11 +27,23 @@
         h3{
             color: #F7B32B;
         }
+        .main__header {
+            color: red;
+            max-width: 1000px;
+            margin: 0 auto;
+             
+        }
+       
         .main {
             max-width: 1000px;
             margin: 0 auto;
-        }
+            background: background-color: #FAACA8;
+            background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+            background-size: cover;
+        
 
+        }
+       
 
 
 a {
@@ -38,25 +52,24 @@ a {
 nav a {
     color: brown;
 }
-.main__header {
-    color: red;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
 
 .navigation
 {
-    background: green;
-    padding: 15px;
+    background: rgb(192, 236, 192);
+    padding: 7px;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .navigation__link {
     color: purple;
     display: flex;
-    margin: 20px;
+    margin: 10px;
     border: 4px;
- justify-content: center;
+ 
 }
 .navigation__link--homepage {
     background: red;
@@ -68,12 +81,14 @@ padding: 4px;
 border: 1px dashed blue;
 margin: 2px auto;
 max-width: 100px;
+
 }
 .week-summary__description {
 padding: 20 px;
 margin: auto;
 max-width: 800px;
 color: rgb(131, 17, 112);
+
 }
 
 .about__heading {
@@ -82,11 +97,32 @@ color: rgb(131, 17, 112);
 .about__link {
     color: yellowgreen;
 }
+.notes {
+ 
+    display: grid;
+    grid-template-areas: "notes__heading notes__heading notes__heading"
+    "notes__heading--description notes__heading--description notes__heading--description"
+    "week-summary--grid-1 week-summary--grid-2 week-summary--grid-3";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 .notes__heading {
-
+    padding: 10px;
+    
     color: green;
+    display: grid;
+    grid-area: 1/1/3/span 3;
 }
+.notes__heading--description {
+    display: grid;
+   grid-column: 1/4;
+   grid-row: 3/4;
+   margin: 2px auto;
+   padding: 10px;
+}
+
+
 .footer {
     color: brown;
     max-width: 1000px;
@@ -109,12 +145,16 @@ color: rgb(131, 17, 112);
 .page {
     
     min-height: 100vh;
-    background-position: center center; 
-    background-repeat: repeat-x;
-    background-attachment: fixed;
+    background: background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    
+   
 }
 
 .content {
-    background-image: url(/html.jpg);
-  
+  padding: 10px;
+  background-clip: content-box;
+  background-image: url(/html.jpg);
+  background-size: cover;
+  background-position: center center;
 }
