@@ -24,3 +24,13 @@ function createContent (querySelectorContent, content) {
 }
 
 createContent('.week-summary__description--js', 'Siemka');
+
+
+const button = document.querySelector('.action--js');
+
+console.log(button)
+
+const myClick = () => {
+    console.log('kliknąłeś')
+}
+button.addEventListener('click', myClick);
