@@ -1,10 +1,6 @@
 const name = 'Justyna';
 const age = '25';
 
-const heading = document.querySelector('.main__heading--js')
-
-heading.innerHTML = `Witaj, nazywam się ${name} i mam ${age} lat.`;
-
 const emptyParagraph = document.querySelector('.week-summary__description--js')
 
 emptyParagraph.innerHTML = `Uzupełniłam treść javascriptem!`;
@@ -30,7 +26,18 @@ const button = document.querySelector('.action--js');
 
 console.log(button)
 
-const myClick = () => {
-    console.log('kliknąłeś')
-}
-button.addEventListener('click', myClick);
+
+button.addEventListener('click', () => {
+
+    const heading = document.querySelector(".main__heading--js")
+    heading.innerHTML = `Witaj, nazywam się Justyna`;
+    heading.classList.toggle('klasa-z-js');
+});
+
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open');
+})
+
