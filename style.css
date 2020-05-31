@@ -41,6 +41,13 @@ h3 {
   background-color: #faaca8;
   background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
   background-size: cover;
+  
+}
+.main--form {
+    display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
 }
 
 a {
@@ -58,9 +65,9 @@ nav a {
   width: 100%;
 }
 .navigation {
-  padding: 16px;
-  border: 10px;
-  margin: 10px;
+  padding: 5px;
+  border: 5px;
+  margin: 5px;
   display: none;
 }
 .navigation--open {
@@ -69,7 +76,7 @@ nav a {
 .navigation__link {
   color: purple;
   display: block;
-  margin: 16px;
+  margin: 10px;
 }
 .navigation__link--homepage {
   color: black;
@@ -103,6 +110,20 @@ nav a {
 .about__picture {
   display: block;
   max-width: 100%;
+}
+.form {
+width: 500px;
+}
+.form__item {
+    display: block;
+    width: 100%;
+}
+.form__label {
+    display: block;
+}
+.form__label--textarea {
+    width:100%;
+    height:300px;
 }
 
 .footer {
