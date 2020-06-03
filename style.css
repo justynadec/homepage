@@ -78,6 +78,10 @@ nav a {
   display: block;
   margin: 10px;
 }
+.navigation__link:hover {
+color: blue;
+}
+
 .navigation__link--homepage {
   color: black;
 }
@@ -92,7 +96,24 @@ nav a {
   padding: 4px;
   border: 1px dashed blue;
   margin: 2px auto;
-  max-width: 100px;
+  max-width: 150px;
+}
+.week-summary::before {
+content: "";
+display: inline-block;
+width: 8px;
+height: 8px;
+background: tomato;
+border-radius: 50%;
+}
+
+.week-summary::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: tomato;
+    border-radius: 50%;
 }
 .week-summary__description {
   padding: 20 px;
@@ -181,6 +202,10 @@ width: 500px;
   margin: 2px auto;
   padding: 10px;
 }
+.form__item:focus {
+    background: rgb(198, 227, 236);
+}
+
 @media screen and (max-width: 300px) {
   .mobile {
     display: initial;
