@@ -1,0 +1,23 @@
+.week-summary {
+    padding: 4px;
+    border: 1px dashed blue;
+    margin: 2px auto;
+    max-width: 150px;
+&::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: tomato;
+    border-radius: 50%;
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: tomato;
+        border-radius: 50%;
+    }
+   
+}

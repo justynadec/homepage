@@ -1,3 +1,30 @@
+.week-summary {
+  padding: 4px;
+  border: 1px dashed blue;
+  margin: 2px auto;
+  max-width: 150px; }
+  .week-summary::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: tomato;
+    border-radius: 50%; }
+  .week-summary::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: tomato;
+    border-radius: 50%; }
+  .week-summary::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: tomato;
+    border-radius: 50%; }
+
 html {
   box-sizing: border-box; }
 
@@ -38,12 +65,12 @@ h3 {
     color: red;
     max-width: 1000px;
     margin: 0 auto; }
-
-.main--form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; }
+  .main__heading--description {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin: 2px auto;
+    padding: 10px; }
 
 a {
   color: hotpink; }
@@ -63,20 +90,16 @@ nav a {
   border: 5px;
   margin: 5px;
   display: none; }
-
-.navigation--open {
-  display: block; }
-
-.navigation__link {
-  color: purple;
-  display: block;
-  margin: 10px; }
-
-.navigation__link:hover {
-  color: blue; }
-
-.navigation__link--homepage {
-  color: black; }
+  .navigation--open {
+    display: block; }
+  .navigation__link {
+    color: purple;
+    display: block;
+    margin: 10px; }
+  .navigation__link:hover {
+    color: blue; }
+  .navigation__link--homepage {
+    color: black; }
 
 .hamburger {
   position: absolute;
@@ -84,34 +107,6 @@ nav a {
   right: 10px;
   border: none;
   background: none; }
-
-.week-summary {
-  padding: 4px;
-  border: 1px dashed blue;
-  margin: 2px auto;
-  max-width: 150px; }
-
-.week-summary::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: tomato;
-  border-radius: 50%; }
-
-.week-summary::after {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: tomato;
-  border-radius: 50%; }
-
-.week-summary__description {
-  padding: 20 px;
-  margin: auto;
-  max-width: 800px;
-  color: #831170; }
 
 .about__heading {
   color: green; }
@@ -125,94 +120,77 @@ nav a {
 
 .form {
   width: 500px; }
-
-.form__item {
-  display: block;
-  width: 100%; }
-
-.form__label {
-  display: block; }
-
-.form__label--textarea {
-  width: 100%;
-  height: 300px; }
-
-.footer {
-  color: brown;
-  max-width: 1000px;
-  margin: 0 auto; }
-
-.footer__link {
-  color: red;
-  max-width: 1000px;
-  margin: 0 auto; }
-
-.list {
-  color: purple;
-  list-style: square; }
-
-.content__heading--html {
-  color: cyan; }
-
-.page {
-  min-height: 100vh;
-  background-color: #faaca8;
-  background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%); }
-
-.content {
-  padding: 10px;
-  background-clip: content-box;
-  background-image: url(/html.jpg);
-  background-size: cover;
-  background-position: center center; }
-
-.mobile {
-  display: none; }
-
-.notes {
-  display: grid;
-  grid-template-areas: "notes__heading notes__heading notes__heading" "notes__heading--description notes__heading--description notes__heading--description" "week-summary--grid-1 week-summary--grid-2 week-summary--grid-3";
-  grid-template-columns: 1fr 1fr 1fr; }
-
-.notes__heading {
-  padding: 10px;
-  color: green;
-  display: grid;
-  grid-area: 1/1/3 / span 3; }
-
-.notes__heading--description {
-  display: grid;
-  grid-column: 1/4;
-  grid-row: 3/4;
-  margin: 2px auto;
-  padding: 10px; }
-
-.form__item:focus {
-  background: #c6e3ec; }
-
-@media screen and (max-width: 300px) {
-  .mobile {
-    display: initial; }
-  .notes {
-    display: initial; }
-  .notes__heading {
-    display: initial; }
-  .notes__heading--description {
-    display: initial; }
-  body {
-    background: red; }
-  .footer {
-    background: blue; } }
-
-@media (min-width: 760px) {
-  .hamburger {
+  .form__item {
+    display: block;
+    width: 100%; }
+  .form__label {
+    display: block; }
+    .form__label__label--textarea {
+      width: 100%;
+      height: 300px; }
+  .form .footer {
+    color: brown;
+    max-width: 1000px;
+    margin: 0 auto; }
+    .form .footer__link {
+      color: red;
+      max-width: 1000px;
+      margin: 0 auto; }
+  .form .list {
+    color: purple;
+    list-style: square; }
+  .form .content__heading--html {
+    color: cyan; }
+  .form .page {
+    min-height: 100vh;
+    background-color: #faaca8;
+    background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%); }
+  .form .content {
+    padding: 10px;
+    background-clip: content-box;
+    background-image: url(/html.jpg);
+    background-size: cover;
+    background-position: center center; }
+  .form .mobile {
     display: none; }
-  .navigation {
-    padding: 7px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
-
-.klasa-z-js {
-  background: yellow; }
+  .form .notes {
+    display: grid;
+    grid-template-areas: "notes__heading notes__heading notes__heading" "notes__heading--description notes__heading--description notes__heading--description" "week-summary--grid-1 week-summary--grid-2 week-summary--grid-3";
+    grid-template-columns: 1fr 1fr 1fr; }
+  .form .notes__heading {
+    padding: 10px;
+    color: green;
+    display: grid;
+    grid-area: 1/1/3 / span 3; }
+  .form .notes__heading--description {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin: 2px auto;
+    padding: 10px; }
+  .form .form__item:focus {
+    background: #c6e3ec; }
+  @media screen and (max-width: 300px) {
+    .form .mobile {
+      display: initial; }
+    .form .notes {
+      display: initial; }
+    .form .notes__heading {
+      display: initial; }
+    .form .notes__heading--description {
+      display: initial; }
+    .form body {
+      background: red; }
+    .form .footer {
+      background: blue; } }
+  @media (min-width: 760px) {
+    .form .hamburger {
+      display: none; }
+    .form .navigation {
+      padding: 7px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  .form .klasa-z-js {
+    background: yellow; }
